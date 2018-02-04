@@ -1,0 +1,49 @@
+<!-- <div class="row">
+        <h4>FILM</h4>
+        <a href="#!/detail" class="btn btn-primary">Xem danh sach film</a>
+</div> -->
+<hr>
+<div class="container">
+    <div class="content">
+        <div class="content-bottom">
+            <h3 class="future">LATEST</h3>
+            <div class="content-bottom-in">
+                <ul id="flexiselDemo2">
+                    <li ng-repeat="f in data.results">
+                        <div class="col-md men">
+                            <a href="#/film/{{f.id}}" class="compare-in ">
+                            	<!-- <img
+                                    src="https://image.tmdb.org/t/p/w500{{f.backdrop_path}}" alt=""/> -->
+                                <!-- <div class="compare in-compare">
+                                    <span>Add to Compare</span>
+                                    <span>Add to Whislist</span>
+                                </div> -->
+                            </a>
+                            <div class="top-content bag">
+                                <h5><a href="single.html">{{ f.title }}</a></h5>
+                                <div class="white">
+                                    <!-- <a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">ADD
+                                        TO CART</a>
+                                    <p class="dollar"><span class="in-dollar">$</span><span>4</span><span>0</span></p> -->
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+	<h4>Tìm kiếm</h4>
+	<input type="text" ng-model="ten"> <a href="#!/search" class="btn btn-primary">Tìm kiếm</a><br> 
+	<div >
+		<i> Tìm kiếm film: </i>  <label class="ng-bind: ten"></label>
+	</div>
+	
+	
+	
+</div>
+<hr>

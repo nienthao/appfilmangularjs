@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="filmApp">
+<head>
+	<title>AngularJS - App Film</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../public/bootstrap/bootstrap.min.css">
+	<script type="text/javascript" src="../public/angular.min.js"></script>
+	<script type="text/javascript" src="../public/angular-route.min.js"></script>
+	<script type="text/javascript" src="../public/angular-resource.min.js"></script>
+	<script type="text/javascript " src="app.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900' rel='stylesheet'
+          type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style >
+		*{
+			font-size: 1.05em;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">
+						App Film
+					</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#!/">Home</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#!/nowplaying">Nowplaying</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#!/popular">Popular</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#!/category">Category</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		
+	</header>
+	<div class="container">
+		<!-- directive -->
+		<div ng-view> </div>
+	</div>
+</body>
+</html>

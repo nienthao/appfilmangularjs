@@ -1,0 +1,44 @@
+<div >
+	Kết quả tìm kiếm : <label class="ng-bind: ten"></label>
+</div>
+<hr> 
+<i> <label >Số kết quả tìm được: {{data.total_results}}</label></i>
+<hr> 
+<div >
+	Pages: 
+	<label ng-repeat = "i in pages" >
+		<a href="#!/search/{{i}}" ng-class="{ 'bg-primary' : page === i }">{{i}}</a> | 
+	</label>
+	
+</div>
+<div class="row">
+        <div class="col-md-6" ng-repeat = "f in data.results">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"> {{ f.title }} </h3> 
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="https://image.tmdb.org/t/p/w500{{f.backdrop_path}}" width="115%">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="panel-body" style="font-size: 13px;">
+
+                            <p> ID : {{ f.id }}</p>
+                            
+                            <p> Overview : {{ f.overview }}</p>
+                            <p> Date : {{ f.release_date }}</p>
+                            <p> Đánh giá : {{ f.vote_average }}</p>
+                            <p> Lượt xem : {{ f.vote_count }}</p>
+                            <a href="#!/film/{{f.id}}" style="float: right;color: red;padding-right: 5%;">Xem thêm</a>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>          
+              
+                      
+        </div>
+        
+    </div>

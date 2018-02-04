@@ -1,0 +1,44 @@
+
+<p style="height: 30px;"></p>
+<div class="row">
+    	<div class="col-md-12" >
+    		<div class="panel panel-default">
+    			<div class="panel-heading">
+    				<h3 class="panel-title"> {{ data.title }} </h3> 
+    			</div>
+    			<div class="row">
+    				<div class="col-md-3">
+    					<img src="https://image.tmdb.org/t/p/w500{{data.backdrop_path}}" width="115%">
+    				</div>
+    				<div class="col-md-9">
+    					<div class="panel-body" style="font-size: 13px;">
+
+		    				<p> ID : {{ data.id }}</p>
+					    	
+					    	<p> Overview : {{ data.overview }}</p>
+					    	<p> Date : {{ data.release_date }}</p>
+					    	<p> Đánh giá : {{ data.vote_average }}</p>
+					    	<p> Lượt xem : {{ data.vote_count }}</p>
+					    	<!-- <a href="#!/film/{{data.results.id}}" style="float: right;color: red;padding-right: 5%;">Xem thêm</a> -->
+		    			</div>
+
+    				</div>
+    			</div>
+                <hr>
+                <div class="panel-heading" >
+                    <h3 class="panel-title">Xem Trailer</h3>
+                </div>
+                <hr>
+                <!--  -->
+                <div class="col-md-offset-2 col-md-8" >
+                    <iframe width="720" height="445" src="{{linkUrl | trustUrl}}">
+                    </iframe>
+                </div>
+                <p style="height: 600px;"></p>
+    			
+    		</div>   		
+              
+                      
+    	</div>
+    	
+    </div>
